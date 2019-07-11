@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-menu-user-management"></i>
+                    <div class="name">用户管理</div>
+                    <div class="fontclass">.icon-menu-user-management</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-grey-deploy-switch"></i>
+                    <div class="name">灰度开关管</div>
+                    <div class="fontclass">.icon-grey-deploy-switch</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-organization-management"></i>
+                    <div class="name">机构管理</div>
+                    <div class="fontclass">.icon-menu-organization-management</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-menu-management"></i>
+                    <div class="name">菜单管理</div>
+                    <div class="fontclass">.icon-menu-menu-management</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-role-management"></i>
+                    <div class="name">角色管理</div>
+                    <div class="fontclass">.icon-menu-role-management</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-datagram"></i>
+                    <div class="name">数据报表</div>
+                    <div class="fontclass">.icon-menu-datagram</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-administrator-management"></i>
+                    <div class="name">管理员管理</div>
+                    <div class="fontclass">.icon-menu-administrator-management</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-operation-log"></i>
+                    <div class="name">操作日志</div>
+                    <div class="fontclass">.icon-menu-operation-log</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-post-management"></i>
+                    <div class="name">岗位管理</div>
+                    <div class="fontclass">.icon-menu-post-management</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-login-log"></i>
+                    <div class="name">登录日志</div>
+                    <div class="fontclass">.icon-menu-login-log</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-menu-subsystem"></i>
+                    <div class="name">子系统</div>
+                    <div class="fontclass">.icon-menu-subsystem</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-service-manage-tool"></i>
+                    <div class="name">服务治理工具</div>
+                    <div class="fontclass">.icon-subsys-service-manage-tool</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-data-manage-tool"></i>
+                    <div class="name">数据治理工具</div>
+                    <div class="fontclass">.icon-subsys-data-manage-tool</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-alert-delivery-platform"></i>
+                    <div class="name">警告收发平台</div>
+                    <div class="fontclass">.icon-subsys-alert-delivery-platform</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-service-arrangement"></i>
+                    <div class="name">服务编排</div>
+                    <div class="fontclass">.icon-subsys-service-arrangement</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-resource-control-platform"></i>
+                    <div class="name">资源管控平台</div>
+                    <div class="fontclass">.icon-subsys-resource-control-platform</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-monitor-platform"></i>
+                    <div class="name">监控平台</div>
+                    <div class="fontclass">.icon-subsys-monitor-platform</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-configuration-management"></i>
+                    <div class="name">配置管理</div>
+                    <div class="fontclass">.icon-subsys-configuration-management</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-development-platform"></i>
+                    <div class="name">开发平台</div>
+                    <div class="fontclass">.icon-subsys-development-platform</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-subsys-report-management"></i>
+                    <div class="name">报表管理</div>
+                    <div class="fontclass">.icon-subsys-report-management</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+//通用样式
+html,body{
+  height: 100%;
+}
+ol,ul {
+  padding: 0;
+  list-style: none
+}
+.fix:after,
+.c-query:after,
+.c-form:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.f-cur{
+  cursor: pointer;
+}
+.f-tc{
+  text-align: center;
+}
+//页面骨架布局
+.l-app{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.l-header{
+  box-sizing: border-box;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 60px;
+  z-index: 99;
+  transition: padding .3s;
+}
+.l-sider{
+  height: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 85;
+  transition: width .3s;
+  border-right: 1px solid @border-color-split;
+  .ivu-layout-sider{
+    background: @body-background;
+  }
+  .u-toggle{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid @border-color-split;
+    border-bottom: 1px solid @border-color-split;
+  }
+  .ivu-menu-opened>*>.ivu-menu-submenu-title-icon{
+    transform: rotate(0deg);
+  }
+}
+.l-content{
+  position: absolute;
+  top: 99px;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 1;
+  transition: left .3s;
+  left: 200px;
+  padding: 0 24px 10px;
+}
+.l-form{
+  padding: 10px;
+  background: @body-background;
+}
+.menu-icon{
+  transition: all .3s;
+}
+.rotate-icon{
+  transform: rotate(-90deg);
+}
+.menu-item span{
+  display: inline-block;
+  overflow: hidden;
+  width: 69px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+  transition: width .2s ease .2s;
+}
+.menu-item i{
+  transform:rotate(-90deg) translateX(0px);
+  transition: font-size .2s ease, transform .2s ease;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.collapsed-menu .ivu-icon-ios-arrow-down{
+  display: none;
+}
+.collapsed-menu span{
+  width: 0;
+  transition: width .2s ease;
+}
+.collapsed-menu i{
+  transform: translateX(5px);
+  transition: font-size .2s ease .2s, transform .2s ease .2s;
+  vertical-align: middle;
+  font-size: 22px;
+}
+.c-logo{
+  text-align: center;
+  font-size: 0;
+  width: 199px;
+  height: 60px;
+  color: @body-background;
+  float: left;
+  cursor: pointer;
+  .u-logo{
+    line-height: 60px;
+    font-size: 0;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+  span{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    vertical-align: middle;
+  }
+}
+.ivu-breadcrumb{
+  font-size: 12px;
+}
+.c-breadCrumb{
+  transition: padding .3s;
+  background: @background-color-base;
+  margin-top: 60px;
+  margin-left: 20px;
+  line-height: 40px;
+  padding-left: 200px;
+}
+.c-tips{
+  padding: 20px 0;
+  border-bottom: 1px solid @border-color-base;
+  p{
+    padding-left: 16px;
+    font-size: 16px;
+    color: @primary-color;
+    height: 16px;
+    line-height: 1;
+    border-left: 2px solid @primary-color;
+  }
+}
+.c-tree{
+  margin-top: 8px;
+  margin-right:8px;
+  padding:16px 5px 0 5px;
+  background: @background-color-base;
+  border: 1px solid @border-color-base;
+  height: 780px;
+}
+.c-operation{
+  padding-top: 8px;
+}
+//表单label大小
+.c-query,
+.c-form{
+  .ivu-form-item-label{
+    width: 120px;
+  }
+  .ivu-form-item-content{
+    margin-left: 120px;
+  }
+  .ivu-form .ivu-form-item-label{
+    padding: 10px 0;
+  }
+}
+//列表查询样式
+.c-query{
+  margin-top: 8px;
+  padding:16px 5px 0 5px;
+  background: @background-color-base;
+  border: 1px solid @border-color-base;
+  .ivu-form-item{
+    margin-bottom: 16px;
+  }
+  .ivu-form-inline .ivu-form-item{
+    float: left;
+    display: block;
+    width: 32%;
+  }
+  .ivu-date-picker{
+    width: 100%;
+  }
+}
+//表单样式
+.c-form{
+  width: 800px;
+  margin: 0 auto;
+  padding:32px 0 0 0;
+}
+.f-single{
+  .ivu-form-item{
+    display: block;
+  }
+}
+.f-double{
+  .ivu-form-item{
+    float: left;
+    display: block;
+    width: 48%;
+  }
+  .ivu-date-picker{
+    width: 100%;
+  }
+  .f-row{
+    width: 98%;
+  }
+}
+
+//模态框居中处理
+.vertical-center-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ivu-modal{
+    top: 0;
+  }
+}
+
+.ivu-modal-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ivu-modal{
+  top: 0;
+}
