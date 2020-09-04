@@ -55,7 +55,7 @@
     "monaco-editor-webpack-plugin": "^1.7.0",
     "mxgraph": "^3.9.12",
     "node-notifier": "^5.1.2",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
