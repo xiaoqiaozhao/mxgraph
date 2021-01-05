@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "ansi-html": "0.0.7",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "echarts": "^4.1.0",
     "iview": "^2.14.3",
     "iview-area": "^1.5.17",
