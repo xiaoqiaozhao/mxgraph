@@ -15,7 +15,7 @@
     "iview": "^2.14.3",
     "iview-area": "^1.5.17",
     "line-numbers": "^0.2.2",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.21",
     "mermaid": "^8.0.0",
     "moment": "^2.21.0",
     "monaco-editor": "^0.15.6",
