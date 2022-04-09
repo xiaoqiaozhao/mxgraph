@@ -17,7 +17,7 @@
     "line-numbers": "^0.2.2",
     "lodash": "^4.17.5",
     "mermaid": "^8.0.0",
-    "moment": "^2.21.0",
+    "moment": "^2.29.2",
     "monaco-editor": "^0.15.6",
     "prismjs": "^1.15.0",
     "qs": "^6.5.1",
