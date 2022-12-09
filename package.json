@@ -22,7 +22,7 @@
     "prismjs": "^1.15.0",
     "qs": "^6.5.1",
     "tinycolor": "0.0.1",
-    "tinymce": "^4.7.9",
+    "tinymce": "^5.10.7",
     "vue": "^2.5.2",
     "vue-clipboard2": "^0.2.1",
     "vue-prism": "^1.0.5",
